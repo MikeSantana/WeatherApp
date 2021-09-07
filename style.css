@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    
+}
+
+body {
+    background: azure;
+}
+/* Seção home */
+#home {
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+#home-content {
+    margin: 0 auto;
+}
+
+#titulo {
+    font-size: 3em;
+}
+
+#form-weather {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+#search-name {
+    height: 40px;
+    padding: 0px 12px 0px 12px;
+   
+    border-color: black;
+    border-radius: 5px;
+    border-style: dashed;
+    margin-right: 10px;
+  
+}
+
+#submit {
+    border-width: 2px;
+    margin-left: 10px;
+}
+
+/* box de cidades */
+ #cities{ 
+     display: grid;
+     grid-gap: 32px 20px;
+     grid-template-columns: repeat(4, 1fr);
+ }
+
+ .city{
+    padding: 40px 10%;
+    border-radius: 20px;
+    background-color: white;
+ }
+  .country{
+    font-size: 0.5em;
+    background: orange;
+    padding: 0.2em 0.6em;
+    border-radius: 30px;
+    vertical-align: super;
+ }
+ .City-temp{
+    
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+ }
+
+ .celcius{
+    font-size: 1.5em;
+ }
+
