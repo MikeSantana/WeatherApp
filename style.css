@@ -1,3 +1,11 @@
+
+:root {
+    --color-darkcyan: #156fb0;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-midnightblue: #0e416f;
+    --color-whitesmoke: #eeeeee;
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -7,21 +15,45 @@
 }
 
 body {
-    background: azure;
+    background: var(--color-whitesmoke);
 }
 /* Seção home */
 #home {
-    text-align: center;
-    height: 200px;
-    display: flex;
-    align-items: center;
-}
-#home-content {
-    margin: 0 auto;
+    background: var(--color-darkcyan);
+    height: 250px;
 }
 
-#titulo {
-    font-size: 3em;
+#nav-bar {
+    background: var(--color-midnightblue);
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#calendar-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#current-date {
+    color: var(--color-white);
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#home-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#logo {
+    font-size: 4.0em;
+    color: var(--color-white);
+    margin: 40px auto 20px auto;
+
 }
 
 #form-weather {
@@ -29,16 +61,41 @@ body {
     margin: 0 auto;
 }
 
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    
+}
+
 #search-name {
+    background: var(--color-darkcyan);
     height: 40px;
+    width: 150px;
     padding: 0px 12px 0px 12px;
-   
-    border-color: black;
+    border-color: var(--color-black);
     border-radius: 5px;
     border-style: dashed;
-    margin-right: 10px;
-  
+    border-width: 2px;
+    color: var(--color-white);
+
 }
+
+#submit-button {
+    background: var(--color-darkcyan);
+    color: var( --color-white);
+    height: 44px;
+    padding: 0px 12px 0px 12px;
+    border-style: solid;
+    border-color: var(--color-black);
+    border-radius: 5px;
+
+    
+}
+
+#search-name::placeholder {
+    color: var(--color-white);
+}
+
 
 #submit {
     border-width: 2px;
@@ -46,6 +103,12 @@ body {
 }
 
 /* box de cidades */
+
+#search-content {
+    max-width: 1100px;
+    margin: 40px auto 40px;
+}
+
  #cities{ 
      display: grid;
      grid-gap: 32px 20px;
